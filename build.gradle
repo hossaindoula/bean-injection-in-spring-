@@ -1,0 +1,17 @@
+group 'com.baeldung'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.springframework/spring-context
+    compile group: 'org.springframework', name: 'spring-core', version: '3.2.6.RELEASE'
+    compile group: 'org.springframework', name: 'spring-context', version: '3.2.6.RELEASE'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
